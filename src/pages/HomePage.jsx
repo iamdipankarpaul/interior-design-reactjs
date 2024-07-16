@@ -21,13 +21,13 @@ export const HomePage = () => {
             />
           </div>
 
-          <div className="p-4 md:p-8 border-t-4 bg-white border-t-[#a6a182] w-fit absolute top-[75px] right-[50px] shadow-lg animate-bounce-slow max-sm:top-[200px]">
+          <div className="p-4 md:p-8 border-t-4 bg-white border-t-[#a6a182] w-fit absolute top-[75px] right-[50px] shadow-lg animate-bounce-slow max-sm:top-[200px] max-sm:right-[30px]">
             <p className="text-sm sm:text-base md:text-lg mb-4 ">Contact:</p>
-            <p className="text-sm sm:text-base font-bold">info@example.com</p>
-            <p className="text-sm sm:text-base font-bold">(629) 555-0129</p>
+            <p className="text-sm sm:text-base font-bold">+91 96099 30991</p>
+            <p className="text-sm sm:text-base font-bold">mi@manshainteriors.com</p>
           </div>
 
-          <div className="p-4 md:p-8 border-t-4 bg-white border-t-[#a6a182] w-fit absolute top-[250px] left-[50px] shadow-lg animate-bounce-slow">
+          <div className="p-4 md:p-8 border-t-4 bg-white border-t-[#a6a182] w-fit absolute top-[250px] left-[50px] max-sm:left-[30px] shadow-lg animate-bounce-slow">
             <p className="text-xl md:text-3xl font-bold text-[#A6A182]">104</p>
             <p className="text-sm sm:text-base">HAPPY CLIENTS</p>
             <div className="my-4 md:my-8"></div>
