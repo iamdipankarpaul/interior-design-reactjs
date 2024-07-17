@@ -1,4 +1,4 @@
-import HeroImages from "./HeroImages";
+import heroImg1 from "../assets/hero.jpg";
 
 const HeroSection = () => {
   return (
@@ -15,7 +15,11 @@ const HeroSection = () => {
         <div className="relative ">
           {/* hero image */}
           <div className="w-full md:w-[85%] aspect-[16/9] mx-auto overflow-hidden">
-            <HeroImages />
+            <img
+              src={heroImg1}
+              alt="hero image"
+              className="h-full w-full object-cover hover:scale-105 duration-300"
+            />
           </div>
 
           {/* floating contact card */}

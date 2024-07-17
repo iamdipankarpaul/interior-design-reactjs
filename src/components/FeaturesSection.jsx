@@ -48,7 +48,7 @@ const FeaturesSection = () => {
   }, []);
 
   return (
-    <section className="p-4 sm:p-6 md:p-8 lg:p-12" id="featureSection">
+    <section className="px-4 sm:px-6 md:px-8 lg:px-12 py-6" id="featureSection">
       <div id="featuresHeadings">
         <p className="text-[#A6A182] text-xl font-medium">BEST SERVICE</p>
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold md:font-extrabold tracking-wider mt-6 mb-8">
@@ -62,7 +62,7 @@ const FeaturesSection = () => {
         className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6"
       >
         <div className="features1 card bg-base-100 shadow-xl rounded-none">
-          <div className="card-body">
+          <div className="card-body py-4">
             <h2 className="text-2xl tracking-wider font-medium">
               Space Planning Solutions
             </h2>
@@ -76,7 +76,7 @@ const FeaturesSection = () => {
         </div>
 
         <div className="features2 card bg-base-100 shadow-xl rounded-none">
-          <div className="card-body">
+          <div className="card-body py-4">
             <h2 className="text-2xl tracking-wider font-medium">
               Art and Decor Curation
             </h2>
@@ -90,7 +90,7 @@ const FeaturesSection = () => {
         </div>
 
         <div className="features1 card bg-base-100 shadow-xl rounded-none">
-          <div className="card-body">
+          <div className="card-body py-4">
             <h2 className="text-2xl tracking-wider font-medium">
               Luxury Interior Design
             </h2>
@@ -105,7 +105,7 @@ const FeaturesSection = () => {
         </div>
 
         <div className="features2 card bg-base-100 shadow-xl rounded-none">
-          <div className="card-body">
+          <div className="card-body py-4">
             <h2 className="text-2xl tracking-wider font-medium">
               Sustainable Design Solutions
             </h2>
