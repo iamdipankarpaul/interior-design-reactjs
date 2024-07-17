@@ -29,7 +29,7 @@ const ScrollToTop = () => {
       style={{
         display: isVisible ? "flex" : "none",
       }}
-      className="btn btn-circle cursor-pointer fixed right-5 bottom-5 mix-blend-difference"
+      className="btn btn-circle cursor-pointer fixed right-5 bottom-5 mix-blend-difference max-md:btn-sm"
     >
       <IconArrowNarrowUp stroke={3} />
     </button>
