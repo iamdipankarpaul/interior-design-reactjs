@@ -12,7 +12,7 @@ export const HomePage = () => {
       <FeaturesSection />
       <AboutSection />
       <AchievementSection />
-      <OwlComponent />
+      {/* <OwlComponent /> */}
       <ContactSection />
     </>
   );
