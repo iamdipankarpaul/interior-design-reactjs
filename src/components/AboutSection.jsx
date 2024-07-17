@@ -33,7 +33,7 @@ const AboutSection = () => {
       duration: 10,
       y: 100,
     });
-  });
+  }, []);
 
   return (
     <section

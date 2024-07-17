@@ -56,8 +56,7 @@ const Footer = () => {
       <footer className="footer footer-center bg-base-200 text-base-content p-4 border-t-2">
         <aside>
           <p>
-            Copyright © ${new Date().getFullYear()} - All right reserved by ACME
-            Industries Ltd
+            Copyright © {new Date().getFullYear()} - All right reserved by Mansha Interiors
           </p>
         </aside>
       </footer>

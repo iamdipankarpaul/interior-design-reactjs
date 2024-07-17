@@ -45,7 +45,7 @@ const FeaturesSection = () => {
         scrub: true,
       },
     });
-  });
+  }, []);
 
   return (
     <section className="p-4 sm:p-6 md:p-8" id="featureSection">

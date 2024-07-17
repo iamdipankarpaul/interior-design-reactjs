@@ -27,13 +27,9 @@ const ScrollToTop = () => {
     <button
       onClick={scrollToTop}
       style={{
-        position: "fixed",
-        bottom: "20px",
-        right: "20px",
         display: isVisible ? "flex" : "none",
-        cursor: "pointer",
       }}
-      className="btn btn-circle"
+      className="btn btn-circle cursor-pointer fixed right-5 bottom-5 mix-blend-difference"
     >
       <IconArrowNarrowUp stroke={2} />
     </button>

@@ -27,7 +27,7 @@ const ContactSection = () => {
       opacity: 0,
       duration: 3,
     });
-  });
+  }, []);
 
   return (
     <section

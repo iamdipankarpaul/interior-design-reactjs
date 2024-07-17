@@ -22,7 +22,7 @@ const AchievementSection = () => {
         // markers: true,
       },
     });
-  });
+  }, []);
 
   return (
     <section
