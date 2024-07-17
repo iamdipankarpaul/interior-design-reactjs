@@ -3,7 +3,6 @@ import AchievementSection from "../components/AchievementSection";
 import ContactSection from "../components/ContactSection";
 import FeaturesSection from "../components/FeaturesSection";
 import HeroSection from "../components/HeroSection";
-import OwlComponent from "../components/OwlComponent";
 
 export const HomePage = () => {
   return (
@@ -12,7 +11,6 @@ export const HomePage = () => {
       <FeaturesSection />
       <AboutSection />
       <AchievementSection />
-      {/* <OwlComponent /> */}
       <ContactSection />
     </>
   );
