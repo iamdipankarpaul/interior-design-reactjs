@@ -23,12 +23,19 @@ const OwlComponent = () => {
         autoplayHoverPause={true}
         autoplaySpeed={1}
       >
-        {items.map((item) => (
-          <div key={item} className="h-14 text-center bg-red-500">
+        {items.map((item, idx) => (
+          <div key={idx} className="h-14 text-center bg-red-500">
             <h4>{item}</h4>
           </div>
         ))}
       </OwlCarousel>
+      {/* 
+      <img
+              src={item}
+              alt="hero image"
+              className="h-full w-full hover:scale-105 duration-300"
+            />
+      */}
     </section>
   );
 };

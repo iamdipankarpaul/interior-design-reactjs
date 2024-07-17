@@ -19,6 +19,7 @@ const AboutSection = () => {
       },
       opacity: 0,
       scale: 0,
+      y: 100,
       duration: 10,
     });
     tl.from("#aboutDetails", {
@@ -38,13 +39,13 @@ const AboutSection = () => {
   return (
     <section
       id="aboutSection"
-      className="p-4 sm:p-6 md:p-8 flex flex-col md:flex-row-reverse gap-4 md:gap-8"
+      className="p-4 sm:p-6 md:p-8 lg:p-12 flex flex-col md:flex-row-reverse gap-4 md:gap-8"
     >
       <div id="aboutDetails" className="flex flex-col justify-center">
         <div id="aboutHeading">
           <p className="text-[#A6A182] text-xl font-medium">ABOUT US</p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold md:font-extrabold tracking-wider mt-4 mb-8">
-            Elevate Your Space design
+            Elevate Your Space
             <br />
             Elevate Your Life
           </h2>
