@@ -31,7 +31,7 @@ const ScrollToTop = () => {
       }}
       className="btn btn-circle cursor-pointer fixed right-5 bottom-5 mix-blend-difference"
     >
-      <IconArrowNarrowUp stroke={2} />
+      <IconArrowNarrowUp stroke={3} />
     </button>
   );
 };
