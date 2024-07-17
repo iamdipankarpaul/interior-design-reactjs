@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="w-[50px] h-[50px]">
             <img src={logo} alt="logo" className="h-full w-full" />
           </div>
-          <p>
+          <p className="text-base">
             We have an exceptional range of services to help you. Keeping in
             view various necessities of our honoured clients, we provide
             creative designing services. We give our best efforts to design your
@@ -18,37 +18,37 @@ const Footer = () => {
         </aside>
         <nav>
           <h6 className="footer-title">SERVICES</h6>
-          <Link to={"/"} className="link link-hover">
-            Branding
+          <Link to={"/"} className="link link-hover text-base">
+            Residential Design
           </Link>
-          <Link to={"/"} className="link link-hover">
-            Design
+          <Link to={"/"} className="link link-hover text-base">
+            Commercial Design
           </Link>
-          <Link to={"/"} className="link link-hover">
-            Marketing
+          <Link to={"/"} className="link link-hover text-base">
+            Space Planning
           </Link>
-          <Link to={"/"} className="link link-hover">
-            Advertisement
+          <Link to={"/"} className="link link-hover text-base">
+            Design Consultation
+          </Link>
+          <Link to={"/"} className="link link-hover text-base">
+            Renovation and Remodeling
           </Link>
         </nav>
         <nav>
           <h6 className="footer-title">FOLLOW US</h6>
-          <Link to={"/"} className="link link-hover">
+          <Link to={"/"} className="link link-hover text-base">
             Facebook
           </Link>
-          <Link to={"/"} className="link link-hover">
+          <Link to={"/"} className="link link-hover text-base">
             Instagram
           </Link>
         </nav>
         <nav>
           <h6 className="footer-title">LEGAL</h6>
-          <Link to={"/"} className="link link-hover">
-            Terms of use
-          </Link>
-          <Link to={"/"} className="link link-hover">
+          <Link to={"/"} className="link link-hover text-base">
             Privacy policy
           </Link>
-          <Link to={"/"} className="link link-hover">
+          <Link to={"/"} className="link link-hover text-base">
             Cookie policy
           </Link>
         </nav>
