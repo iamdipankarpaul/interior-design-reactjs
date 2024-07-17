@@ -1,4 +1,4 @@
-import OwlCarousel from "react-owl-carousel";
+import ReactOwlCarousel from "react-owl-carousel";
 
 import heroImg1 from "../assets/hero-images/hero1.jpg";
 import heroImg2 from "../assets/hero-images/hero2.avif";
@@ -10,7 +10,7 @@ const HeroImages = () => {
   const images = [heroImg1, heroImg2, heroImg3, heroImg4, heroImg5];
 
   return (
-    <OwlCarousel
+    <ReactOwlCarousel
       className="owl-theme"
       loop
       margin={10}
@@ -29,7 +29,7 @@ const HeroImages = () => {
           className="h-full w-full object-cover hover:scale-105 duration-300"
         />
       ))}
-    </OwlCarousel>
+    </ReactOwlCarousel>
   );
 };
 
