@@ -6,7 +6,7 @@ const HeroSection = () => {
       <section
         className={`px-4 sm:px-6 md:px-8 lg:px-12 pt-12 md:pt-16 pb-28 max-sm:pb-36`}
       >
-        <h1 className="text-4xl md:text-5xl text-center font-bold md:font-extrabold mt-32 md:mt-16 mb-8 md:mb-14 tracking-wider">
+        <h1 className="text-4xl sm:text-5xl text-center font-bold md:font-extrabold mt-32 md:mt-16 mb-8 md:mb-14 tracking-wider">
           Transform Your Space <br />
           with Elegance and Style
         </h1>
