@@ -35,7 +35,7 @@ const ContactSection = () => {
       className="p-4 sm:p-6 md:p-8 lg:p-12 flex flex-col md:flex-row gap-4 md:gap-6"
     >
       <div id="contactHeading" className="md:w-1/2">
-        <p className="text-[#A6A182] text-xl font-medium">CONTACT US</p>
+        <p className="text-accent text-xl font-semibold md:font-bold">CONTACT US</p>
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold md:font-extrabold tracking-wider mt-4 mb-4 md:mb-8">
           Have Any Questions
           <br />

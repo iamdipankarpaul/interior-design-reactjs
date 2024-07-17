@@ -5,7 +5,10 @@ export default {
     extend: {
       animation: {
         "bounce-slow": "bounce 2s infinite",
-      }
+      },
+      colors: {
+        "accent": "#a6a182",
+      },
     },
   },
   plugins: [require("daisyui")],

@@ -18,23 +18,9 @@ const FeaturesSection = () => {
         end: "50% 40%",
         scrub: true,
       },
-    });
-    tl.from(".features1", {
+    }).from(".features", {
       opacity: 0,
-      x: -500,
-      duration: 0.5,
-      ease: "power3.out",
-      stagger: 0.3,
-      scrollTrigger: {
-        trigger: "#featuresContainer",
-        start: "top 80%",
-        end: "50% 50%",
-        scrub: true,
-      },
-    });
-    tl.from(".features2", {
-      opacity: 0,
-      x: 500,
+      y: 100,
       duration: 0.5,
       ease: "power3.out",
       stagger: 0.3,
@@ -50,7 +36,9 @@ const FeaturesSection = () => {
   return (
     <section className="px-4 sm:px-6 md:px-8 lg:px-12 py-6" id="featureSection">
       <div id="featuresHeadings">
-        <p className="text-[#A6A182] text-xl font-medium">BEST SERVICE</p>
+        <p className="text-accent text-xl font-semibold md:font-bold">
+          BEST SERVICE
+        </p>
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold md:font-extrabold tracking-wider mt-6 mb-8">
           Designing Future Rooms <br />
           One at a Time
@@ -61,7 +49,7 @@ const FeaturesSection = () => {
         id="featuresContainer"
         className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6"
       >
-        <div className="features1 card bg-base-100 shadow-xl rounded-none">
+        <div className="features card bg-base-100 shadow-xl rounded-none border-b-4 border-l-4 border-b-accent border-l-accent">
           <div className="card-body py-4">
             <h2 className="text-2xl tracking-wider font-medium">
               Space Planning Solutions
@@ -75,7 +63,7 @@ const FeaturesSection = () => {
           </div>
         </div>
 
-        <div className="features2 card bg-base-100 shadow-xl rounded-none">
+        <div className="features card bg-base-100 shadow-xl rounded-none border-b-4 border-l-4 border-b-accent border-l-accent">
           <div className="card-body py-4">
             <h2 className="text-2xl tracking-wider font-medium">
               Art and Decor Curation
@@ -89,7 +77,7 @@ const FeaturesSection = () => {
           </div>
         </div>
 
-        <div className="features1 card bg-base-100 shadow-xl rounded-none">
+        <div className="features card bg-base-100 shadow-xl rounded-none border-b-4 border-l-4 border-b-accent border-l-accent">
           <div className="card-body py-4">
             <h2 className="text-2xl tracking-wider font-medium">
               Luxury Interior Design
@@ -104,7 +92,7 @@ const FeaturesSection = () => {
           </div>
         </div>
 
-        <div className="features2 card bg-base-100 shadow-xl rounded-none">
+        <div className="features card bg-base-100 shadow-xl rounded-none border-b-4 border-l-4 border-b-accent border-l-accent">
           <div className="card-body py-4">
             <h2 className="text-2xl tracking-wider font-medium">
               Sustainable Design Solutions

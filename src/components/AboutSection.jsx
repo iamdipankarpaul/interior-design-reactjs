@@ -43,7 +43,7 @@ const AboutSection = () => {
     >
       <div id="aboutDetails" className="flex flex-col justify-center">
         <div id="aboutHeading">
-          <p className="text-[#A6A182] text-xl font-medium">ABOUT US</p>
+          <p className="text-accent text-xl font-semibold md:font-bold">ABOUT US</p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold md:font-extrabold tracking-wider mt-4 mb-8">
             Elevate Your Space
             <br />

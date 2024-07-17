@@ -30,8 +30,10 @@ const AchievementSection = () => {
       id="achievementSection"
       className="p-4 sm:p-6 md:p-8 lg:p-12 flex flex-col lg:flex-row gap-4 md:gap-8"
     >
-      <div id="achievementHeading" className="max-w-lg">
-        <p className="text-[#A6A182] text-xl font-medium">TRUSTED EXPERIENCE</p>
+      <div id="achievementHeading" className="lg:max-w-lg">
+        <p className="text-accent text-xl font-semibold md:font-bold">
+          TRUSTED EXPERIENCE
+        </p>
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold md:font-extrabold tracking-wider mt-4 mb-8">
           Modern Design Solutions
         </h2>
@@ -43,7 +45,7 @@ const AchievementSection = () => {
       >
         <div className=" stats shadow">
           <div className="stat text-center">
-            <div className="stat-value text-[#A6A182]">
+            <div className="stat-value text-accent">
               <span className="achievement">4</span>M
             </div>
             <div className="stat-desc whitespace-normal">SQUARE FEET BUILT</div>
@@ -52,7 +54,7 @@ const AchievementSection = () => {
 
         <div className=" stats shadow">
           <div className="stat text-center">
-            <div className="stat-value text-[#A6A182]">
+            <div className="stat-value text-accent">
               <span className="achievement">104</span>
             </div>
             <div className="stat-desc whitespace-normal">HAPPY CLIENTS</div>
@@ -61,7 +63,7 @@ const AchievementSection = () => {
 
         <div className=" stats shadow">
           <div className="stat text-center">
-            <div className="stat-value text-[#A6A182]">
+            <div className="stat-value text-accent">
               <span className="achievement">98</span>
             </div>
             <div className="stat-desc whitespace-normal">AWARDS RECEIVED</div>
@@ -70,7 +72,7 @@ const AchievementSection = () => {
 
         <div className=" stats shadow">
           <div className="stat text-center">
-            <div className="stat-value text-[#A6A182]">
+            <div className="stat-value text-accent">
               <span className="achievement">105</span>
             </div>
             <div className="stat-desc whitespace-normal">WORK IN PROGRESS</div>
