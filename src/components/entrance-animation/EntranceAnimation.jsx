@@ -60,7 +60,7 @@ const EntranceAnimation = ({ setLoadingAnimation }) => {
       >
         <div
           id="loading-text"
-          className="text-5xl font-medium sm:font-semibold text-white text-center motion-safe:animate-pulse-fast text-balance"
+          className="text-4xl sm:text-5xl font-medium sm:font-semibold text-white text-center motion-safe:animate-pulse-fast text-balance"
         >
           Welcome to Mansha Interiors
         </div>
