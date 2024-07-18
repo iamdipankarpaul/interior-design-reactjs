@@ -10,9 +10,11 @@ const EntranceAnimation = ({ setLoadingAnimation }) => {
 
     const loadingAnimation = () => {
       const tl = gsap.timeline();
-      tl.from(loadingText, {
-        duration: 2,
+      tl.to(loadingText, {
         ease: "power2.out",
+        duration: 1,
+        delay: 2,
+        y: -500,
       });
       return tl;
     };
@@ -23,8 +25,7 @@ const EntranceAnimation = ({ setLoadingAnimation }) => {
       const end = "M 0 100 V 0 Q 50 0 100 0 V 100 z";
       gsap.set(mask, { autoAlpha: 1 });
       tl.to(path, {
-        // delay: 2,
-        duration: 0.8,
+        duration: 0.4,
         attr: { d: start },
         ease: "power2.in",
       }).to(path, {
@@ -45,8 +46,7 @@ const EntranceAnimation = ({ setLoadingAnimation }) => {
           setLoadingAnimation(false);
         },
       });
-      tl.add(loadingAnimation()).add(maskAnimation());
-      // tl.add(maskAnimation());
+      tl.add(loadingAnimation()).add(maskAnimation(), 2);
     };
 
     entranceAnimation();
