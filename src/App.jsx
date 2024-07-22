@@ -2,6 +2,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import AppLayout from "./layout/AppLayout";
 import SmoothScrolling from "./components/SmoothScrolling";
+import ServicesPage from "./pages/ServicesPage";
+import TeamPage from "./pages/TeamPage";
+import ContactPage from "./pages/ContactPage";
 
 const router = createBrowserRouter([
   {
@@ -18,15 +21,15 @@ const router = createBrowserRouter([
       },
       {
         path: "services",
-        element: <div>services</div>,
+        element: <ServicesPage />,
       },
       {
         path: "teams",
-        element: <div>teams</div>,
+        element: <TeamPage />,
       },
       {
         path: "contact",
-        element: <div>contact</div>,
+        element: <ContactPage />,
       },
     ],
   },
