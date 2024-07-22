@@ -5,6 +5,8 @@ import { useRef } from "react";
 
 const HeroSection = () => {
   const headingRef = useRef(null);
+  const heroImage1Ref = useRef(null);
+  const heroImage2Ref = useRef(null);
   const headingText = "Transform Your Space with Elegance and Style";
 
   const splitText = headingText.split("").map((char, index) => (
@@ -19,6 +21,33 @@ const HeroSection = () => {
       { opacity: 0 },
       { opacity: 1, stagger: 0.03, duration: 1 }
     );
+
+    gsap.from(".imageOverlay", 1.2, {
+      top: 0,
+      left: 0,
+      width: "100%",
+    });
+
+    const tl = gsap.timeline({ repeat: -1 });
+
+    tl.to(heroImage1Ref.current, {
+      opacity: 1,
+      duration: 2,
+    });
+    tl.to(heroImage1Ref.current, {
+      opacity: 0,
+      duration: 1,
+      delay: 2,
+    });
+    tl.to(heroImage2Ref.current, {
+      opacity: 1,
+      duration: 2,
+    });
+    tl.to(heroImage2Ref.current, {
+      opacity: 0,
+      duration: 1,
+      delay: 2,
+    });
   }, []);
 
   return (
@@ -30,7 +59,7 @@ const HeroSection = () => {
         <h1
           ref={headingRef}
           id="heroHeading"
-          className="text-4xl sm:text-5xl text-center font-bold md:font-extrabold mt-32 md:mt-16 mb-8 md:mb-14 tracking-wider text-balance md:w-3/4 mx-auto"
+          className="text-4xl sm:text-5xl lg:text-7xl text-center  mt-32 md:mt-16 mb-8 md:mb-14 tracking-wider text-balance md:w-3/4 mx-auto font-dm-serif-display"
         >
           {splitText}
         </h1>
@@ -38,12 +67,22 @@ const HeroSection = () => {
         {/* relative image container */}
         <div className="relative ">
           {/* hero image */}
-          <div className="w-full md:w-[85%] aspect-[16/9] mx-auto overflow-hidden">
+          <div className="w-full md:w-[85%] relative aspect-[16/9] mx-auto overflow-hidden">
             <img
+              ref={heroImage1Ref}
               src={heroImg1}
               alt="hero image"
-              className="h-full w-full object-cover hover:scale-105 duration-300"
+              className="heroImage absolute top-0 left-0 h-full w-full object-cover opacity-0"
             />
+            <img
+              ref={heroImage2Ref}
+              src={
+                "https://plus.unsplash.com/premium_photo-1670360414483-64e6d9ba9038?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              }
+              alt="hero image"
+              className="heroImage absolute top-0 left-0 h-full w-full object-cover opacity-0"
+            />
+            <div className="imageOverlay absolute top-0 left-0 h-full bg-accent"></div>
           </div>
 
           {/* floating contact card */}

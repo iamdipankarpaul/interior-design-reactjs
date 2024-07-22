@@ -3,8 +3,11 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
 import aboutImg from "../assets/about.avif";
+import { useRef } from "react";
 
 const AboutSection = () => {
+  const imageOverlayRef = useRef();
+
   gsap.registerPlugin(ScrollTrigger);
 
   useGSAP(() => {
@@ -15,20 +18,32 @@ const AboutSection = () => {
         start: "top 90%",
         end: "top 40%",
         scrub: true,
-        // markers: true,
+        once: true,
       },
       opacity: 0,
-      scale: 0,
-      y: 100,
-      duration: 10,
+      scale: 1.3,
+      duration: 5,
     });
+    tl.to(imageOverlayRef.current, {
+      top: 0,
+      left: 0,
+      width: 0,
+      duration: 1.2,
+      scrollTrigger: {
+        trigger: "#aboutImageCon",
+        start: "top 90%",
+        end: "top 40%",
+        scrub: true,
+        once: true,
+      }
+    }, 0)
     tl.from("#aboutDetails", {
       scrollTrigger: {
         trigger: "#aboutSection",
         start: "top 90%",
         end: "top 50%",
         scrub: true,
-        // markers: true,
+        once: true,
       },
       opacity: 0,
       duration: 10,
@@ -44,7 +59,7 @@ const AboutSection = () => {
       <div id="aboutDetails" className="flex flex-col justify-center">
         <div id="aboutHeading">
           <p className="text-accent text-xl font-semibold md:font-bold">ABOUT US</p>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold md:font-extrabold tracking-wider mt-4 mb-8">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-dm-serif-display tracking-wider my-4">
             Elevate Your Space
             <br />
             Elevate Your Life
@@ -65,13 +80,14 @@ const AboutSection = () => {
           </p>
         </div>
       </div>
-      <div id="aboutImageCon" className="">
+      <div id="aboutImageCon" className="relative overflow-hidden">
         <img
           id="aboutImg"
           src={aboutImg}
           className="h-full w-full object-cover"
           alt="about image"
         />
+      <div ref={imageOverlayRef} className="imageOverlay absolute top-0 left-0 w-full h-full bg-accent"></div>
       </div>
     </section>
   );

@@ -17,6 +17,7 @@ const FeaturesSection = () => {
         start: "top 80%",
         end: "50% 40%",
         scrub: true,
+        once: true,
       },
     }).from(".features", {
       opacity: 0,
@@ -29,6 +30,7 @@ const FeaturesSection = () => {
         start: "top 80%",
         end: "50% 50%",
         scrub: true,
+        once: true,
       },
     });
   }, []);
@@ -39,7 +41,7 @@ const FeaturesSection = () => {
         <p className="text-accent text-xl font-semibold md:font-bold">
           BEST SERVICE
         </p>
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold md:font-extrabold tracking-wider mt-6 mb-8">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-dm-serif-display tracking-wider my-6">
           Designing Future Rooms <br />
           One at a Time
         </h2>

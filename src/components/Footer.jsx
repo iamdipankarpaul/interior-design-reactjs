@@ -19,10 +19,10 @@ const Footer = () => {
         <nav>
           <h6 className="footer-title">SERVICES</h6>
           <Link to={"/"} className="link link-hover text-base">
-            Residential Design
+            Interior Design
           </Link>
           <Link to={"/"} className="link link-hover text-base">
-            Commercial Design
+            Architecture Design
           </Link>
           <Link to={"/"} className="link link-hover text-base">
             Space Planning

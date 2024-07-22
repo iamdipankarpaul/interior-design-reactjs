@@ -16,10 +16,10 @@ const AchievementSection = () => {
       },
       scrollTrigger: {
         trigger: "#achievementSection",
-        start: "top 80%",
-        end: "top 40%",
+        start: "top 90%",
+        end: "top 50%",
         scrub: true,
-        // markers: true,
+        once: true,
       },
     });
   }, []);
@@ -34,7 +34,7 @@ const AchievementSection = () => {
         <p className="text-accent text-xl font-semibold md:font-bold">
           TRUSTED EXPERIENCE
         </p>
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold md:font-extrabold tracking-wider mt-4 mb-8">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-dm-serif-display tracking-wider mt-4 mb-8">
           Modern Design Solutions
         </h2>
       </div>
