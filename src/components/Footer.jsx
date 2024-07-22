@@ -6,7 +6,7 @@ const Footer = () => {
     <>
       <footer className="footer bg-base-200 text-base-content p-4 sm:p-6 md:p-8 lg:p-12">
         <aside className="max-w-md">
-          <div className="w-[50px] h-[50px]">
+          <div className="w-[70px] h-[70px]">
             <img src={logo} alt="logo" className="h-full w-full" />
           </div>
           <p className="text-base">

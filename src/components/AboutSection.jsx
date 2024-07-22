@@ -4,6 +4,7 @@ import { ScrollTrigger } from "gsap/all";
 
 import aboutImg from "../assets/about.avif";
 import { useRef } from "react";
+import ImageReveal from "./ImageReveal";
 
 const AboutSection = () => {
   const imageOverlayRef = useRef();
@@ -24,19 +25,23 @@ const AboutSection = () => {
       scale: 1.3,
       duration: 5,
     });
-    tl.to(imageOverlayRef.current, {
-      top: 0,
-      left: 0,
-      width: 0,
-      duration: 1.2,
-      scrollTrigger: {
-        trigger: "#aboutImageCon",
-        start: "top 90%",
-        end: "top 40%",
-        scrub: true,
-        once: true,
-      }
-    }, 0)
+    tl.to(
+      imageOverlayRef.current,
+      {
+        top: 0,
+        left: 0,
+        width: 0,
+        duration: 1,
+        scrollTrigger: {
+          trigger: "#aboutImageCon",
+          start: "top 90%",
+          end: "top 70%",
+          scrub: true,
+          once: true,
+        },
+      },
+      0
+    );
     tl.from("#aboutDetails", {
       scrollTrigger: {
         trigger: "#aboutSection",
@@ -58,7 +63,9 @@ const AboutSection = () => {
     >
       <div id="aboutDetails" className="flex flex-col justify-center">
         <div id="aboutHeading">
-          <p className="text-accent text-xl font-semibold md:font-bold">ABOUT US</p>
+          <p className="text-accent text-xl font-semibold md:font-bold">
+            ABOUT US
+          </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-dm-serif-display tracking-wider my-4">
             Elevate Your Space
             <br />
@@ -80,15 +87,19 @@ const AboutSection = () => {
           </p>
         </div>
       </div>
-      <div id="aboutImageCon" className="relative overflow-hidden">
+      {/* <div id="aboutImageCon" className="relative overflow-hidden">
         <img
           id="aboutImg"
           src={aboutImg}
           className="h-full w-full object-cover"
           alt="about image"
         />
-      <div ref={imageOverlayRef} className="imageOverlay absolute top-0 left-0 w-full h-full bg-accent"></div>
-      </div>
+        <div
+          ref={imageOverlayRef}
+          className="imageOverlay absolute top-0 left-0 w-full h-full bg-accent"
+        ></div>
+      </div> */}
+      <ImageReveal src={aboutImg} alt={"about section image"}/>
     </section>
   );
 };

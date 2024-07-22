@@ -22,7 +22,7 @@ const HeroSection = () => {
       { opacity: 1, stagger: 0.03, duration: 1 }
     );
 
-    gsap.from(".imageOverlay", 1.2, {
+    gsap.from(".imageOverlay", 1, {
       top: 0,
       left: 0,
       width: "100%",
@@ -86,7 +86,7 @@ const HeroSection = () => {
           </div>
 
           {/* floating contact card */}
-          <div className="w-fit p-4 md:p-8 bg-white border-t-4 border-t-accent absolute shadow-lg animate-bounce-slow top-[80%] sm:top-[15%] right-[1%] sm:right-[3%] z-10">
+          <div className="w-fit p-4 md:p-8 bg-white border-t-4 border-t-accent absolute shadow-lg animate-bounce-slow top-[80%] sm:top-[10%] right-[1%] sm:right-[3%] z-10">
             <p className="text-sm sm:text-base md:text-lg mb-4 ">Contact:</p>
             <p className="text-sm sm:text-base font-bold">+91 96099 30991</p>
             <p className="text-sm sm:text-base font-bold">
@@ -95,7 +95,7 @@ const HeroSection = () => {
           </div>
 
           {/* floating clients card */}
-          <div className="w-fit p-4 md:p-8 bg-white border-t-4 border-t-accent absolute shadow-lg animate-bounce-slow top-[95%] sm:top-[75%] left-[1%] sm:left-[3%] z-10">
+          <div className="w-fit p-4 md:p-8 bg-white border-t-4 border-t-accent absolute shadow-lg animate-bounce-slow top-[95%] sm:top-[65%] left-[1%] sm:left-[3%] z-10">
             <p className="text-xl md:text-3xl font-bold text-accent">104</p>
             <p className="text-sm sm:text-base">HAPPY CLIENTS</p>
             <div className="my-4 md:my-8"></div>
