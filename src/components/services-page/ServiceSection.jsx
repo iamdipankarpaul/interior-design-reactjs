@@ -11,7 +11,7 @@ const ServiceSection = () => {
             We provide different types of Interior design
           </h1>
         </header>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8 my-8">
           {services.map((service, idx) => (
             <div key={idx}>
@@ -22,7 +22,7 @@ const ServiceSection = () => {
               />
 
               <TextReveal>
-                <h2 className="font-dm-serif-display text-xl sm:text-3xl mb-2">
+                <h2 className="font-dm-serif-display text-2xl sm:text-3xl mb-2">
                   {service?.heading}
                 </h2>
                 <p className="md:text-lg">{service?.description}</p>

@@ -17,7 +17,7 @@ const ServiceSteps = () => {
             <TextReveal key={idx}>
               <div
                 key={idx}
-                className="block px-6 py-8 shadow-md hover:shadow-xl transition  border-b-4 border-l-4 border-b-accent border-l-accent"
+                className="block p-6 md:p-8 shadow-md hover:shadow-xl transition border border-b-4 border-l-4 border-b-accent border-l-accent"
               >
                 <h2 className="text-xl font-bold">{serviceStep.heading}</h2>
 

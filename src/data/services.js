@@ -1,3 +1,5 @@
+import { randomId } from "@mantine/hooks";
+
 export const services = [
   {
     image:
@@ -5,6 +7,7 @@ export const services = [
     heading: "Home Interior",
     description:
       "Transform your living space into a sanctuary of comfort and style. Our designs reflect your personality, making your house truly feel like home.",
+    id: randomId(),
   },
   {
     image:
@@ -12,6 +15,7 @@ export const services = [
     heading: "Office Interior",
     description:
       "Create a productive and inspiring work environment. We design offices that boost efficiency and reflect your brand&apos;s identity.",
+    id: randomId(),
   },
   {
     image:
@@ -19,6 +23,7 @@ export const services = [
     heading: "Restaurant Interior",
     description:
       "Designing memorable dining experiences with ambiance and functionality. Our restaurant interiors blend aesthetic appeal with practical solutions.",
+    id: randomId(),
   },
   {
     image:
@@ -26,6 +31,7 @@ export const services = [
     heading: "Furniture Solutions",
     description:
       "Custom furniture designs tailored to fit your space perfectly. Our pieces combine functionality with stunning design.",
+    id: randomId(),
   },
   {
     image:
@@ -33,6 +39,7 @@ export const services = [
     heading: "Color Design",
     description:
       "Expert color consulting to create the perfect palette for your space. Our designs use color to evoke the right mood and enhance your interior.",
+    id: randomId(),
   },
   {
     image:
@@ -40,5 +47,6 @@ export const services = [
     heading: "Architecture Design",
     description:
       "Innovative architectural solutions that blend aesthetics and functionality. We design buildings that are both beautiful and practical.",
+    id: randomId(),
   },
 ];
