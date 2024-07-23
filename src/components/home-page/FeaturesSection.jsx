@@ -55,7 +55,7 @@ const FeaturesSection = () => {
         {features.map((feature) => (
           <div
             key={feature?.id}
-            className="features card bg-base-100 shadow-xl rounded-none border-b-4 border-l-4 border-b-accent border-l-accent"
+            className="features card bg-base-100 shadow-xl border border-b-4 border-l-4 border-b-accent border-l-accent"
           >
             <div className="card-body py-4">
               <h2 className="text-2xl tracking-wider font-medium">
@@ -67,46 +67,6 @@ const FeaturesSection = () => {
             </div>
           </div>
         ))}
-
-        {/* <div className="features card bg-base-100 shadow-xl rounded-none border-b-4 border-l-4 border-b-accent border-l-accent">
-          <div className="card-body py-4">
-            <h2 className="text-2xl tracking-wider font-medium">
-              Art and Decor Curation
-            </h2>
-            <p className="md:text-lg text-gray-500 my-4">
-              Enhance your interiors with our art and decor curation services. We help you select the perfect pieces, from paintings to sculptures and decorative items, ensuring they complement and elevate your overall design theme.
-            </p>
-          </div>
-        </div>
-
-        <div className="features card bg-base-100 shadow-xl rounded-none border-b-4 border-l-4 border-b-accent border-l-accent">
-          <div className="card-body py-4">
-            <h2 className="text-2xl tracking-wider font-medium">
-              Luxury Interior Design
-            </h2>
-            <p className="md:text-lg text-gray-500 my-4">
-              Experience the pinnacle of elegance and sophistication with our
-              luxury interior design services. We craft bespoke interiors using
-              the finest materials, exclusive furnishings, and meticulous
-              attention to detail, creating spaces that exude opulence and
-              style.
-            </p>
-          </div>
-        </div>
-
-        <div className="features card bg-base-100 shadow-xl rounded-none border-b-4 border-l-4 border-b-accent border-l-accent">
-          <div className="card-body py-4">
-            <h2 className="text-2xl tracking-wider font-medium">
-              Sustainable Design Solutions
-            </h2>
-            <p className="md:text-lg text-gray-500 my-4">
-              Embrace eco-friendly living with our sustainable design solutions.
-              We incorporate environmentally responsible practices and materials
-              into your interiors, creating beautiful, healthy, and sustainable
-              spaces.
-            </p>
-          </div>
-        </div> */}
       </div>
     </section>
   );
