@@ -1,4 +1,5 @@
 // import { useState } from "react";
+import { useEffect } from "react";
 import AboutSection from "../components/home-page/AboutSection";
 import AchievementSection from "../components/home-page/AchievementSection";
 import ContactSection from "../components/home-page/ContactSection";
@@ -8,6 +9,13 @@ import HeroSection from "../components/home-page/HeroSection";
 
 export const HomePage = () => {
   // const [LoadingAnimation, setLoadingAnimation] = useState(true);
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
 
   return (
     <>

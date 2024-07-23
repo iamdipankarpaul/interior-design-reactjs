@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
+import { socialMedia } from "../data/socialMedia";
 
 const Footer = () => {
   return (
@@ -22,31 +23,25 @@ const Footer = () => {
 
         <nav>
           <h6 className="footer-title">SERVICES</h6>
-          <Link to={"/"} className="link link-hover text-base">
-            Interior Design
-          </Link>
-          <Link to={"/"} className="link link-hover text-base">
-            Architecture Design
-          </Link>
-          <Link to={"/"} className="link link-hover text-base">
-            Space Planning
-          </Link>
-          <Link to={"/"} className="link link-hover text-base">
-            Design Consultation
-          </Link>
-          <Link to={"/"} className="link link-hover text-base">
-            Renovation and Remodeling
-          </Link>
+          <p className="text-base">Interior Design</p>
+          <p className="text-base">Architecture Design</p>
+          <p className="text-base">Space Planning</p>
+          <p className="text-base">Design Consultation</p>
+          <p className="text-base">Renovation and Remodeling</p>
         </nav>
 
         <nav>
           <h6 className="footer-title">FOLLOW US</h6>
-          <Link to={"/"} className="link link-hover text-base">
-            Facebook
-          </Link>
-          <Link to={"/"} className="link link-hover text-base">
-            Instagram
-          </Link>
+
+          {socialMedia.map((social) => (
+            <Link
+              key={social.id}
+              to={social.to}
+              className="link link-hover text-base"
+            >
+              {social.label}
+            </Link>
+          ))}
         </nav>
 
         <nav>

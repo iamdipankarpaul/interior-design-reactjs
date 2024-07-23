@@ -11,20 +11,25 @@ const ContactPageSection = () => {
               Get in touch
             </h1>
             <p className="pt-2 pb-4 md:text-lg">
-              Fill in the form to start a conversation
+              We are here to answer any question you may have. Feel free to
+              reach via contact form.
             </p>
             <div className="space-y-4">
               <p className="flex items-center gap-4">
                 <IconMapPin stroke={2} />
-                <span>Fake address, 9999 City</span>
+                <span>
+                  Shop 33, 2nd Floor, The Planet Mall Sevoke Road, Siliguri
+                  -734001
+                </span>
               </p>
               <p className="flex items-center gap-4">
                 <IconPhone stroke={2} />
-                <span>123456789</span>
+                <span>+91 9609930991 / 9832049481</span>
               </p>
               <p className="flex items-center gap-4">
                 <IconMail stroke={2} />
-                <span>contact@business.com</span>
+                <span>mi@manshainteriors.com
+                </span>
               </p>
             </div>
           </TextReveal>
