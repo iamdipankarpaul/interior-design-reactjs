@@ -19,7 +19,9 @@ const ServiceSteps = () => {
                 key={idx}
                 className="block p-6 md:p-8 shadow-md hover:shadow-xl transition border border-b-4 border-l-4 border-b-accent border-l-accent"
               >
-                <h2 className="text-xl font-bold">{serviceStep.heading}</h2>
+                <h2 className="text-xl md:text-2xl tracking-wide font-bold">
+                  {serviceStep.heading}
+                </h2>
 
                 <p className="mt-1 text-sm">{serviceStep.description}</p>
               </div>
