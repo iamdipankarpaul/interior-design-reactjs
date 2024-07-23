@@ -1,7 +1,8 @@
-import heroImg1 from "../assets/hero.jpg";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
+
+import heroImg1 from "../../assets/hero.jpg";
 
 const HeroSection = () => {
   const headingRef = useRef(null);

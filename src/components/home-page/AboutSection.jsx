@@ -1,10 +1,10 @@
+import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
-import aboutImg from "../assets/about.avif";
-import { useRef } from "react";
-import ImageReveal from "./ImageReveal";
+import aboutImg from "../../assets/about.avif";
+import ImageReveal from "../ImageReveal";
 
 const AboutSection = () => {
   const imageOverlayRef = useRef();
@@ -87,19 +87,7 @@ const AboutSection = () => {
           </p>
         </div>
       </div>
-      {/* <div id="aboutImageCon" className="relative overflow-hidden">
-        <img
-          id="aboutImg"
-          src={aboutImg}
-          className="h-full w-full object-cover"
-          alt="about image"
-        />
-        <div
-          ref={imageOverlayRef}
-          className="imageOverlay absolute top-0 left-0 w-full h-full bg-accent"
-        ></div>
-      </div> */}
-      <ImageReveal src={aboutImg} alt={"about section image"}/>
+      <ImageReveal src={aboutImg} alt={"about section image"} />
     </section>
   );
 };

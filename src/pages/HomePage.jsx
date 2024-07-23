@@ -1,9 +1,9 @@
 // import { useState } from "react";
-import AboutSection from "../components/AboutSection";
-import AchievementSection from "../components/AchievementSection";
-import ContactSection from "../components/ContactSection";
-import FeaturesSection from "../components/FeaturesSection";
-import HeroSection from "../components/HeroSection";
+import AboutSection from "../components/home-page/AboutSection";
+import AchievementSection from "../components/home-page/AchievementSection";
+import ContactSection from "../components/home-page/ContactSection";
+import FeaturesSection from "../components/home-page/FeaturesSection";
+import HeroSection from "../components/home-page/HeroSection";
 // import EntranceAnimation from "../components/entrance-animation/EntranceAnimation";
 
 export const HomePage = () => {
