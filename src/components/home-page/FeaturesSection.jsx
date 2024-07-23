@@ -55,7 +55,7 @@ const FeaturesSection = () => {
         {features.map((feature) => (
           <div
             key={feature?.id}
-            className="features card bg-base-100 shadow-xl border border-b-4 border-l-4 border-b-accent border-l-accent"
+            className="features card bg-base-100 shadow-xl rounded-none border border-b-4 border-l-4 border-b-accent border-l-accent"
           >
             <div className="card-body py-4">
               <h2 className="text-2xl tracking-wider font-medium">
