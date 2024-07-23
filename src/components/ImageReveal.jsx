@@ -1,64 +1,52 @@
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
 import { useRef } from "react";
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/all";
 
-const ImageReveal = ({ src, alt }) => {
-  const imageContainerRef = useRef(null);
-  const imageRef = useRef(null);
-  const imageOverlayRef = useRef(null);
+gsap.registerPlugin(ScrollTrigger);
 
-  gsap.registerPlugin(ScrollTrigger);
+const ImageReveal = ({ src, alt, classNames = "" }) => {
+  const revealContainerRef = useRef(null);
 
   useGSAP(() => {
-    const tl = gsap.timeline();
-    tl.from(imageRef.current, {
+    const container = revealContainerRef.current;
+    const image = container.querySelector("img");
+
+    let tl = gsap.timeline({
       scrollTrigger: {
-        trigger: imageContainerRef.current,
-        start: "top 90%",
-        end: "top 40%",
-        scrub: true,
+        trigger: container,
         once: true,
       },
-      opacity: 0,
-      scale: 1.3,
-      duration: 5,
     });
-    tl.to(
-      imageOverlayRef.current,
-      {
-        top: 0,
-        left: 0,
-        width: 0,
-        duration: 1,
-        scrollTrigger: {
-          trigger: imageContainerRef.current,
-          start: "top 90%",
-          end: "top 70%",
-          scrub: true,
-          once: true,
-        },
-      },
-      0
-    );
+
+    tl.set(container, { autoAlpha: 1 });
+    tl.from(container, 1.2, {
+      xPercent: -100,
+      ease: "power2.out",
+    });
+    tl.from(image, 1.2, {
+      xPercent: 100,
+      scale: 1.3,
+      delay: -1.2,
+      ease: "power2.out",
+    });
+
+    return () => {
+      // Clean up ScrollTrigger instances on component unmount
+      ScrollTrigger.getAll().forEach((instance) => instance.kill());
+    };
   }, []);
 
   return (
     <div
-      ref={imageContainerRef}
-      id="imageContainer"
-      className="relative overflow-hidden"
+      className={`reveal overflow-hidden relative + ${classNames}`}
+      ref={revealContainerRef}
     >
       <img
-        ref={imageRef}
+        className="h-full w-full object-cover origin-left"
         src={src}
         alt={alt}
-        className="h-full w-full object-cover"
       />
-      <div
-        ref={imageOverlayRef}
-        className="imageOverlay absolute top-0 left-0 w-full h-full bg-accent"
-      ></div>
     </div>
   );
 };

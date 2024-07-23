@@ -1,4 +1,3 @@
-import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
@@ -7,41 +6,10 @@ import aboutImg from "../../assets/about.avif";
 import ImageReveal from "../ImageReveal";
 
 const AboutSection = () => {
-  const imageOverlayRef = useRef();
-
   gsap.registerPlugin(ScrollTrigger);
 
   useGSAP(() => {
     const tl = gsap.timeline();
-    tl.from("#aboutImg", {
-      scrollTrigger: {
-        trigger: "#aboutImageCon",
-        start: "top 90%",
-        end: "top 40%",
-        scrub: true,
-        once: true,
-      },
-      opacity: 0,
-      scale: 1.3,
-      duration: 5,
-    });
-    tl.to(
-      imageOverlayRef.current,
-      {
-        top: 0,
-        left: 0,
-        width: 0,
-        duration: 1,
-        scrollTrigger: {
-          trigger: "#aboutImageCon",
-          start: "top 90%",
-          end: "top 70%",
-          scrub: true,
-          once: true,
-        },
-      },
-      0
-    );
     tl.from("#aboutDetails", {
       scrollTrigger: {
         trigger: "#aboutSection",
@@ -57,38 +25,41 @@ const AboutSection = () => {
   }, []);
 
   return (
-    <section
-      id="aboutSection"
-      className="p-4 sm:p-6 md:p-8 lg:p-12 flex flex-col md:flex-row-reverse gap-4 md:gap-8"
-    >
-      <div id="aboutDetails" className="flex flex-col justify-center">
-        <div id="aboutHeading">
-          <p className="text-accent text-xl font-semibold md:font-bold">
-            ABOUT US
-          </p>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-dm-serif-display tracking-wider my-4">
-            Elevate Your Space
-            <br />
-            Elevate Your Life
-          </h2>
+    <>
+      <section
+        id="aboutSection"
+        className=" px-4 py-6 sm:px-6 sm:py-8 lg:px-8 lg:py-12"
+      >
+        <div className="mx-auto max-w-screen-xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16">
+            <ImageReveal
+              src={aboutImg}
+              alt="interior design service image"
+              classNames="h-64 md:h-96 lg:h-full"
+            />
+
+            <div id="aboutDetails" className="flex flex-col justify-center">
+              <p className="text-accent text-xl font-semibold md:font-bold">
+                ABOUT US
+              </p>
+
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-dm-serif-display tracking-wider">
+                Interior Design
+              </h2>
+
+              <p className="mt-4 text-gray-600 lg:text-lg">
+                We instill a sense of continuity and connection to the larger
+                world by designing a building from the inside-out as well as the
+                outside-in. Any design solution must begin with an understanding
+                of people&apos;s needs and how a space will be used. The goal is
+                to create functional and elegant interiors that evoke a sense of
+                place and complement a building&apos;s outward expression.
+              </p>
+            </div>
+          </div>
         </div>
-        <div id="aboutDetails">
-          <p className="md:text-lg text-gray-500 my-4">
-            One began as a collaborative architectural and landscape workshop,
-            and has remained true to its trans-disciplinary way of thinking
-            since its inception.
-          </p>
-          <p className="md:text-lg text-gray-500 my-4">
-            Our work strives to enhance our sense of place, identity and
-            relationship to others and the physical spaces we inhabit, whether
-            feral or human-made. Museums, markets, reindeer observatories,
-            landscapes and dollhouses get the same care and attention to
-            purpose.
-          </p>
-        </div>
-      </div>
-      <ImageReveal src={aboutImg} alt={"about section image"} />
-    </section>
+      </section>
+    </>
   );
 };
 
