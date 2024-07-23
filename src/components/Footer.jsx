@@ -3,8 +3,11 @@ import logo from "../assets/logo.png";
 
 const Footer = () => {
   return (
-    <>
-      <footer className="footer bg-base-200 text-base-content p-4 sm:p-6 md:p-8 lg:p-12">
+    <footer>
+      <div
+        data-theme="dark"
+        className="footer bg-base-200 text-base-content p-4 sm:p-6 md:p-8 lg:p-12"
+      >
         <aside className="max-w-md">
           <div className="w-[70px] h-[70px]">
             <img src={logo} alt="logo" className="h-full w-full" />
@@ -16,6 +19,7 @@ const Footer = () => {
             dreams.
           </p>
         </aside>
+
         <nav>
           <h6 className="footer-title">SERVICES</h6>
           <Link to={"/"} className="link link-hover text-base">
@@ -34,6 +38,7 @@ const Footer = () => {
             Renovation and Remodeling
           </Link>
         </nav>
+
         <nav>
           <h6 className="footer-title">FOLLOW US</h6>
           <Link to={"/"} className="link link-hover text-base">
@@ -43,6 +48,7 @@ const Footer = () => {
             Instagram
           </Link>
         </nav>
+
         <nav>
           <h6 className="footer-title">LEGAL</h6>
           <Link to={"/"} className="link link-hover text-base">
@@ -52,16 +58,20 @@ const Footer = () => {
             Cookie policy
           </Link>
         </nav>
-      </footer>
-      <footer className="footer footer-center bg-base-200 text-base-content p-4 border-t-2">
+      </div>
+
+      <div
+        data-theme="dark"
+        className="footer footer-center bg-base-200 text-base-content p-4 border-t"
+      >
         <aside>
           <p>
             Copyright © {new Date().getFullYear()} - All right reserved by
             Mansha Interiors
           </p>
         </aside>
-      </footer>
-    </>
+      </div>
+    </footer>
   );
 };
 

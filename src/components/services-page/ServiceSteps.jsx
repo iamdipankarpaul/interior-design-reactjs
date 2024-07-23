@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { serviceSteps } from "../../data/serciceSteps";
+import { serviceSteps } from "../../data/serviceSteps";
 import TextReveal from "../TextReveal";
 
 const ServiceSteps = () => {
@@ -8,7 +8,7 @@ const ServiceSteps = () => {
       <section className="mx-auto px-4 py-6 sm:px-6 sm:py-8 lg:px-8 lg:py-12">
         <header className="max-w-xl mx-auto">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-dm-serif-display tracking-wider text-center">
-            We have very simple work Process
+            How We work?
           </h2>
         </header>
 
@@ -31,7 +31,7 @@ const ServiceSteps = () => {
 
         <div className="text-center my-4 sm:my-8">
           <Link to="/contact" role="button" className="btn btn-outline">
-            Get Started Today
+            Contact Us Today
           </Link>
         </div>
       </section>
