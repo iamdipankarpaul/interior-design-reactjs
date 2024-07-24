@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import PageHeader from "../components/PageHeader";
 import ServiceSection from "../components/services-page/ServiceSection";
-// import ProjectShowcase from "../components/services-page/ProjectShowcase";
 import ServiceSteps from "../components/services-page/ServiceSteps";
 
 const ServicesPage = () => {
@@ -19,7 +18,6 @@ const ServicesPage = () => {
         subtitle="Comprehensive Design Services for Your Needs"
       />
       <ServiceSection />
-      {/* <ProjectShowcase /> */}
       <ServiceSteps />
     </>
   );
