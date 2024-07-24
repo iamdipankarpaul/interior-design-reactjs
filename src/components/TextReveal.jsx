@@ -24,7 +24,7 @@ const TextReveal = ({ children, classNames = "" }) => {
   }, []);
 
   return (
-    <div ref={textWrapprRef} className={`overflow-hidden + ${classNames}`}>
+    <div ref={textWrapprRef} className={`overflow-hidden ${classNames}`}>
       <div ref={textRef}>{children}</div>
     </div>
   );

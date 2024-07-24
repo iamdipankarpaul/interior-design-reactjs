@@ -30,7 +30,7 @@ const ServiceSteps = () => {
         </div>
 
         <div className="text-center my-4 sm:my-8">
-          <Link to="/contact" role="button" className="btn btn-outline">
+          <Link to="/contact" role="button" className="btn btn-neutral">
             Contact Us Today
           </Link>
         </div>

@@ -21,17 +21,17 @@ const FounderSection = () => {
               <span className="hidden lg:absolute lg:inset-y-0 lg:-start-16 lg:block lg:w-16 lg:bg-gray-100"></span>
 
               <div className="p-8 md:p-12">
-                <h2 className="text-3xl sm:text-4xl font-dm-serif-display tracking-wider">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-dm-serif-display tracking-wider">
                   {founder.designation}
                 </h2>
 
                 {founder.about.map((about, i) => (
-                  <p key={i} className="mt-4 text-gray-600">
+                  <p key={i} className="mt-4 md:text-lg text-gray-600">
                     {about}
                   </p>
                 ))}
 
-                <Link to="/contact" role="button" className="mt-8 btn btn-info">
+                <Link to="/contact" role="button" className="mt-8 btn btn-neutral md:text-lg">
                   Get in Touch
                 </Link>
               </div>

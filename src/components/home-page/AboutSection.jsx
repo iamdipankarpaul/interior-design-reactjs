@@ -4,6 +4,7 @@ import { ScrollTrigger } from "gsap/all";
 
 import aboutImg from "../../assets/about.avif";
 import ImageReveal from "../ImageReveal";
+import { aboutInfo } from "../../data/about";
 
 const AboutSection = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -35,25 +36,24 @@ const AboutSection = () => {
             <ImageReveal
               src={aboutImg}
               alt="interior design service image"
-              classNames="h-64 md:h-96 lg:h-full"
+              classNames="h-64 sm:h-96 md:h-full max-md:order-last" 
             />
 
             <div id="aboutDetails" className="flex flex-col justify-center">
               <p className="text-accent text-xl font-semibold md:font-bold">
-                ABOUT US
+                {aboutInfo.title.toUpperCase()}
               </p>
 
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-dm-serif-display tracking-wider">
-                Interior Design
+                {aboutInfo.subtitle}
               </h2>
-
+              {aboutInfo.description.slice(0, 2).map((item, idx) => (
+                <p key={idx} className="mt-4 text-gray-600 lg:text-lg">
+                  {item}
+                </p>
+              ))}
               <p className="mt-4 text-gray-600 lg:text-lg">
-                We instill a sense of continuity and connection to the larger
-                world by designing a building from the inside-out as well as the
-                outside-in. Any design solution must begin with an understanding
-                of people&apos;s needs and how a space will be used. The goal is
-                to create functional and elegant interiors that evoke a sense of
-                place and complement a building&apos;s outward expression.
+                {aboutInfo.description[aboutInfo.description.length - 1]}
               </p>
             </div>
           </div>

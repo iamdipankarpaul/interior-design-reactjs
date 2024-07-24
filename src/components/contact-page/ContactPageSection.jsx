@@ -1,5 +1,5 @@
-import { IconMail, IconMapPin, IconPhone } from "@tabler/icons-react";
 import TextReveal from "../TextReveal";
+import { contactInfo } from "../../data/contact";
 
 const ContactPageSection = () => {
   return (
@@ -15,22 +15,12 @@ const ContactPageSection = () => {
               reach via contact form.
             </p>
             <div className="space-y-4">
-              <p className="flex items-center gap-4">
-                <IconMapPin stroke={2} />
-                <span>
-                  Shop 33, 2nd Floor, The Planet Mall Sevoke Road, Siliguri
-                  -734001
-                </span>
-              </p>
-              <p className="flex items-center gap-4">
-                <IconPhone stroke={2} />
-                <span>+91 9609930991 / 9832049481</span>
-              </p>
-              <p className="flex items-center gap-4">
-                <IconMail stroke={2} />
-                <span>mi@manshainteriors.com
-                </span>
-              </p>
+              {contactInfo.map((contact) => (
+                <p key={contact.id} className="flex items-center gap-4">
+                  <contact.icon stroke={2} />
+                  <span>{contact.description}</span>
+                </p>
+              ))}
             </div>
           </TextReveal>
         </div>
@@ -63,7 +53,7 @@ const ContactPageSection = () => {
                 placeholder="Bio"
               ></textarea>
             </label>
-            <button type="button" className="btn btn-info">
+            <button type="button" className="btn btn-neutral md:text-lg">
               Submit
             </button>
           </form>
