@@ -40,10 +40,14 @@ const HeroSection = () => {
       duration: 1,
       delay: 2,
     });
-    tl.to(heroImage2Ref.current, {
-      opacity: 1,
-      duration: 2,
-    });
+    tl.to(
+      heroImage2Ref.current,
+      {
+        opacity: 1,
+        duration: 2,
+      },
+      2
+    );
     tl.to(heroImage2Ref.current, {
       opacity: 0,
       duration: 1,

@@ -3,7 +3,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import TextReveal from "./TextReveal";
 
-const PageHeader = ({ title }) => {
+const PageHeader = ({ title, subtitle }) => {
   const headingRef = useRef();
 
   useGSAP(() => {
@@ -21,6 +21,9 @@ const PageHeader = ({ title }) => {
           <h1 className="text-4xl sm:text-5xl lg:text-7xl text-center text-balance font-dm-serif-display text-white">
             {title}
           </h1>
+          <p className="text-xl lg:text-2xl text-center text-balance text-white mt-4">
+            {subtitle}
+          </p>
         </TextReveal>
       </section>
     </>
