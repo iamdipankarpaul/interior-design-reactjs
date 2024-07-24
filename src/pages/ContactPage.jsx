@@ -12,7 +12,10 @@ const ContactPage = () => {
 
   return (
     <>
-      <PageHeader title="Contact Us" />
+      <PageHeader
+        title="Contact Us"
+        subtitle="Let's Start a Conversation About Your Space"
+      />
       <ContactPageSection />
     </>
   );

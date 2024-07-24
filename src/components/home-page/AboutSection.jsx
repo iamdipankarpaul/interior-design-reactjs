@@ -5,6 +5,7 @@ import { ScrollTrigger } from "gsap/all";
 import aboutImg from "../../assets/about.avif";
 import ImageReveal from "../ImageReveal";
 import { aboutInfo } from "../../data/about";
+import TextReveal from "../TextReveal";
 
 const AboutSection = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -36,25 +37,29 @@ const AboutSection = () => {
             <ImageReveal
               src={aboutImg}
               alt="interior design service image"
-              classNames="h-64 sm:h-96 md:h-full max-md:order-last" 
+              classNames="h-64 sm:h-96 md:h-full max-md:order-last"
             />
 
             <div id="aboutDetails" className="flex flex-col justify-center">
-              <p className="text-accent text-xl font-semibold md:font-bold">
-                {aboutInfo.title.toUpperCase()}
-              </p>
-
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-dm-serif-display tracking-wider">
-                {aboutInfo.subtitle}
-              </h2>
-              {aboutInfo.description.slice(0, 2).map((item, idx) => (
-                <p key={idx} className="mt-4 text-gray-600 lg:text-lg">
-                  {item}
+              <TextReveal>
+                <p className="text-accent text-xl font-semibold md:font-bold">
+                  {aboutInfo.title.toUpperCase()}
                 </p>
-              ))}
-              <p className="mt-4 text-gray-600 lg:text-lg">
-                {aboutInfo.description[aboutInfo.description.length - 1]}
-              </p>
+
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-dm-serif-display tracking-wider">
+                  {aboutInfo.subtitle}
+                </h2>
+
+                {aboutInfo.description.slice(0, 2).map((item, idx) => (
+                  <p key={idx} className="mt-4 text-gray-600 lg:text-lg">
+                    {item}
+                  </p>
+                ))}
+
+                <p className="mt-4 text-gray-600 lg:text-lg">
+                  {aboutInfo.description[aboutInfo.description.length - 1]}
+                </p>
+              </TextReveal>
             </div>
           </div>
         </div>

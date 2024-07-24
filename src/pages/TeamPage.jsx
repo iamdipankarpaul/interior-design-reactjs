@@ -5,7 +5,10 @@ import TeamSection from "../components/teams-page/TeamSection";
 const TeamPage = () => {
   return (
     <>
-      <PageHeader title="Team Members" />
+      <PageHeader
+        title="Team Members"
+        subtitle="Meet the Creative Minds Behind the Designs"
+      />
       <FounderSection />
       <TeamSection />
     </>

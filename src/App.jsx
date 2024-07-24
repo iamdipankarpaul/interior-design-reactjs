@@ -1,12 +1,15 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import HomePage from "./pages/HomePage";
+
 import AppLayout from "./layout/AppLayout";
 import SmoothScrolling from "./components/SmoothScrolling";
+
+import HomePage from "./pages/HomePage";
 import ServicesPage from "./pages/ServicesPage";
 import TeamPage from "./pages/TeamPage";
 import ContactPage from "./pages/ContactPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import ProjectsPage from "./pages/ProjectsPage";
+import AboutUsPage from "./pages/AboutUsPage";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: "contact",
         element: <ContactPage />,
+      },
+      {
+        path: "about",
+        element: <AboutUsPage />,
       },
     ],
   },

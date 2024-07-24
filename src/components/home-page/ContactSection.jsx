@@ -40,9 +40,6 @@ const ContactSection = () => {
     >
       <TextReveal>
         <div className="">
-          {/* <p className="text-accent text-xl font-semibold md:font-bold">
-            CONTACT US
-          </p> */}
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-dm-serif-display tracking-wider mt-4 mb-4 md:mb-8 text-balance text-center">
             Have Any Questions Contact Us
           </h2>

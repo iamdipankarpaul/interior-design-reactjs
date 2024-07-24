@@ -22,7 +22,7 @@ const Footer = () => {
         </aside>
 
         <nav>
-          <h6 className="footer-title">SERVICES</h6>
+          <h6 className="footer-title font-dm-serif-display">SERVICES</h6>
           <p className="text-base">Interior Design</p>
           <p className="text-base">Architecture Design</p>
           <p className="text-base">Space Planning</p>
@@ -31,7 +31,7 @@ const Footer = () => {
         </nav>
 
         <nav>
-          <h6 className="footer-title">FOLLOW US</h6>
+          <h6 className="footer-title font-dm-serif-display">FOLLOW US</h6>
 
           {socialMedia.map((social) => (
             <Link
@@ -45,7 +45,7 @@ const Footer = () => {
         </nav>
 
         <nav>
-          <h6 className="footer-title">LEGAL</h6>
+          <h6 className="footer-title font-dm-serif-display">LEGAL</h6>
           <Link to={"/"} className="link link-hover text-base">
             Privacy policy
           </Link>
