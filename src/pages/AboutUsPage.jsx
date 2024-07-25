@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import AboutPageSection from "../components/about-page/AboutPageSection";
 import PageHeader from "../components/PageHeader";
 import { aboutUsContent } from "../data/about-page-content";
+import MetaTags from "../components/MetaTags";
 aboutUsContent;
 
 const AboutUsPage = () => {
@@ -14,6 +15,7 @@ const AboutUsPage = () => {
 
   return (
     <>
+      <MetaTags title="Mansha Interior | About Us" />
       <PageHeader
         title={aboutUsContent.title}
         subtitle={aboutUsContent.subtitle}

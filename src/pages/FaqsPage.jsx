@@ -1,10 +1,12 @@
 import FaqsList from "../components/faq-page/FaqsList";
+import MetaTags from "../components/MetaTags";
 import PageHeader from "../components/PageHeader";
 import { faqsPageContent } from "../data/faq-page-content";
 
 const FaqsPage = () => {
   return (
     <>
+      <MetaTags title="Mansha Interior | FAQs" />
       <PageHeader
         title={faqsPageContent.title}
         subtitle={faqsPageContent.subtitle}

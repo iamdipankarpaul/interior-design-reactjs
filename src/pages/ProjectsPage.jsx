@@ -3,6 +3,7 @@ import PageHeader from "../components/PageHeader";
 import { projects } from "../data/projects";
 import ProjectList from "../components/projects-page/ProjectList";
 import ProjectTags from "../components/projects-page/ProjectTags";
+import MetaTags from "../components/MetaTags";
 
 const ProjectsPage = () => {
   useEffect(() => {
@@ -33,6 +34,7 @@ const ProjectsPage = () => {
 
   return (
     <>
+      <MetaTags title="Mansha Interior | Projects" />
       <PageHeader
         title="Our Projects"
         subtitle={"Explore Our Portfolio of Completed Projects"}

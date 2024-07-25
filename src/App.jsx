@@ -1,4 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
 
 import AppLayout from "./layout/AppLayout";
 import SmoothScrolling from "./components/SmoothScrolling";
@@ -56,9 +57,11 @@ const router = createBrowserRouter([
 export default function App() {
   return (
     <>
-      <SmoothScrolling>
-        <RouterProvider router={router} />
-      </SmoothScrolling>
+      <HelmetProvider>
+        <SmoothScrolling>
+          <RouterProvider router={router} />
+        </SmoothScrolling>
+      </HelmetProvider>
     </>
   );
 }
