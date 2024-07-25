@@ -10,6 +10,7 @@ import ContactPage from "./pages/ContactPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import AboutUsPage from "./pages/AboutUsPage";
+import FaqsPage from "./pages/FaqsPage";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: "about",
         element: <AboutUsPage />,
+      },
+      {
+        path: "faqs",
+        element: <FaqsPage />,
       },
     ],
   },

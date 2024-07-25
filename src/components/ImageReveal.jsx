@@ -5,7 +5,7 @@ import { ScrollTrigger } from "gsap/all";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const ImageReveal = ({ src, alt, classNames = "" }) => {
+const ImageReveal = ({ src, alt, classNames = "", imageClassNames = "" }) => {
   const revealContainerRef = useRef(null);
 
   useGSAP(() => {
@@ -39,13 +39,13 @@ const ImageReveal = ({ src, alt, classNames = "" }) => {
 
   return (
     <div
-      className={`reveal overflow-hidden relative + ${classNames}`}
+      className={`reveal overflow-hidden relative h-full w-full ${classNames}`}
       ref={revealContainerRef}
     >
       <img
-        className="h-full w-full object-cover origin-left"
         src={src}
         alt={alt}
+        className={`h-full w-full object-cover origin-left ${imageClassNames}`}
       />
     </div>
   );

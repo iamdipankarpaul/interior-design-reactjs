@@ -1,12 +1,16 @@
+import { randomId } from "@mantine/hooks";
+
 export const projects = [
   {
+    id: randomId(),
     name: "Vastu Office",
     image:
       "https://www.manshainteriors.com/wp-content/uploads/2022/12/Untitled-design-5.png",
-    tags: ["interior", "office"],
+    tags: ["interior design", "office"],
     link: "",
   },
   {
+    id: randomId(),
     name: "Shiv Ji",
     image:
       "https://www.manshainteriors.com/wp-content/uploads/2022/12/Untitled-design-3.png",
@@ -14,6 +18,7 @@ export const projects = [
     link: "",
   },
   {
+    id: randomId(),
     name: "Uday Agarwal",
     image:
       "https://www.manshainteriors.com/wp-content/uploads/2022/12/Untitled-design-4.png",
@@ -21,6 +26,7 @@ export const projects = [
     link: "",
   },
   {
+    id: randomId(),
     name: "Sanjay Agarwal",
     image:
       "https://www.manshainteriors.com/wp-content/uploads/2022/12/Untitled-design-2.png",
@@ -28,6 +34,7 @@ export const projects = [
     link: "",
   },
   {
+    id: randomId(),
     name: "Binit Ji",
     image:
       "https://www.manshainteriors.com/wp-content/uploads/2022/12/Untitled-design-1.png",
@@ -35,6 +42,7 @@ export const projects = [
     link: "",
   },
   {
+    id: randomId(),
     name: "Bike and Tri",
     image:
       "https://www.manshainteriors.com/wp-content/uploads/2022/12/Untitled-design.png",
@@ -42,6 +50,7 @@ export const projects = [
     link: "",
   },
   {
+    id: randomId(),
     name: "Dr. Amit",
     image:
       "https://www.manshainteriors.com/wp-content/uploads/2022/12/Dr.-Amit.png",
@@ -49,6 +58,7 @@ export const projects = [
     link: "",
   },
   {
+    id: randomId(),
     name: "Bimal Ji",
     image:
       "https://www.manshainteriors.com/wp-content/uploads/2022/12/BIMAL-JEE-DOLPHIN-SIGNATURE-Room.jpg",
@@ -56,6 +66,7 @@ export const projects = [
     link: "",
   },
   {
+    id: randomId(),
     name: "Ashok Marda",
     image:
       "https://www.manshainteriors.com/wp-content/uploads/2022/12/Ashok.png",
@@ -63,6 +74,7 @@ export const projects = [
     link: "",
   },
   {
+    id: randomId(),
     name: "Anup Ji",
     image:
       "https://www.manshainteriors.com/wp-content/uploads/2022/02/Anup-Ji.png",

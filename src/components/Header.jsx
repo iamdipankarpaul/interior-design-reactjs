@@ -46,6 +46,9 @@ const Header = () => {
             <li>
               <NavLink to={"/contact"}>Contact</NavLink>
             </li>
+            <li>
+              <NavLink to={"/faqs"}>FAQs</NavLink>
+            </li>
           </ul>
         </div>
 
@@ -79,6 +82,9 @@ const Header = () => {
               <NavLink to={"/"}>Home</NavLink>
             </li>
             <li>
+              <NavLink to={"/about"}>About Us</NavLink>
+            </li>
+            <li>
               <NavLink to={"/projects"}>Projects</NavLink>
             </li>
             <li>
@@ -89,6 +95,9 @@ const Header = () => {
             </li>
             <li>
               <NavLink to={"/contact"}>Contact</NavLink>
+            </li>
+            <li>
+              <NavLink to={"/faqs"}>FAQs</NavLink>
             </li>
             <li>
               <button className="btn btn-outline mt-4">Get a Quote</button>

@@ -3,12 +3,8 @@ import { randomId } from "@mantine/hooks";
 export const faqsPageContent = {
   title: "Frequently Asked Questions",
   subtitle: "Find Answers to Common Queries About Our Services",
-  description: `
-      Welcome to our FAQs page! Here you'll find answers to some of the most common questions we receive about our interior design services. 
-      Whether you're curious about our process, timeline, or how we can work within your budget, we have the information you need. 
-      If you don't find the answer to your question here, please feel free to contact us directly. We're here to help you every step of the way in creating your perfect space.
-    `,
-
+  description:
+    "Welcome to our FAQs page! Here you'll find answers to some of the most common questions we receive about our interior design services.\n Whether you're curious about our process, timeline, or how we can work within your budget, we have the information you need.\n If you don't find the answer to your question here, please feel free to contact us directly.\n We're here to help you every step of the way in creating your perfect space.",
   faqs: [
     {
       id: randomId(),
