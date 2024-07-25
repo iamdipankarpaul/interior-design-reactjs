@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
+import { twMerge } from "tailwind-merge";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -32,20 +33,27 @@ const ImageReveal = ({ src, alt, classNames = "", imageClassNames = "" }) => {
     });
 
     return () => {
-      // Clean up ScrollTrigger instances on component unmount
       ScrollTrigger.getAll().forEach((instance) => instance.kill());
     };
   }, []);
 
   return (
     <div
-      className={`reveal overflow-hidden relative h-full w-full ${classNames}`}
+      // className={`reveal overflow-hidden relative h-full w-full ${classNames}`}
+      className={twMerge(
+        "reveal overflow-hidden relative h-full w-full",
+        classNames
+      )}
       ref={revealContainerRef}
     >
       <img
         src={src}
         alt={alt}
-        className={`h-full w-full object-cover origin-left ${imageClassNames}`}
+        // className={`h-full w-full object-cover origin-left ${imageClassNames}`}
+        className={twMerge(
+          "h-full w-full object-cover origin-left",
+          imageClassNames
+        )}
       />
     </div>
   );

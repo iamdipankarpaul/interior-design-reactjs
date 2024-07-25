@@ -1,10 +1,17 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import PageHeader from "../components/PageHeader";
 import { projects } from "../data/projects";
 import ProjectList from "../components/projects-page/ProjectList";
 import ProjectTags from "../components/projects-page/ProjectTags";
 
 const ProjectsPage = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   const [selectedTags, setSelectedTags] = useState([]);
 
   const tagOptions = Array.from(

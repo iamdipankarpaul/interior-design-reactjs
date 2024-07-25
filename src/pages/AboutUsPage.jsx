@@ -1,9 +1,17 @@
+import { useEffect } from "react";
 import AboutPageSection from "../components/about-page/AboutPageSection";
 import PageHeader from "../components/PageHeader";
 import { aboutUsContent } from "../data/about-page-content";
 aboutUsContent;
 
 const AboutUsPage = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   return (
     <>
       <PageHeader
