@@ -1,10 +1,12 @@
 import { IconMenu } from "@tabler/icons-react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useHeadroom } from "@mantine/hooks";
 import logo from "../assets/logo.png";
 
 const Header = () => {
   const pinned = useHeadroom({ fixedAt: 120 });
+  const navigate = useNavigate();
+
   return (
     <header
       className="shadow-md"
@@ -25,7 +27,7 @@ const Header = () => {
           </Link>
         </div>
 
-        {/* laptop links */}
+        {/* desktop links */}
         <div className="navbar-center hidden md:flex">
           <ul className="menu menu-horizontal px-1 gap-2">
             <li>
@@ -53,7 +55,10 @@ const Header = () => {
         </div>
 
         <div className="navbar-end">
-          <button className="btn btn-outline max-md:mr-2 max-md:hidden">
+          <button
+            className="btn btn-outline max-md:mr-2 max-md:hidden"
+            onClick={() => navigate("/contact")}
+          >
             Get a Quote
           </button>
 
@@ -77,6 +82,7 @@ const Header = () => {
           ></label>
 
           {/* drawer sidebar content*/}
+          {/* mobile navigation */}
           <ul className="menu bg-base-200 text-base-content min-h-full w-80 p-4">
             <li>
               <NavLink to={"/"}>Home</NavLink>
@@ -100,7 +106,12 @@ const Header = () => {
               <NavLink to={"/faqs"}>FAQs</NavLink>
             </li>
             <li>
-              <button className="btn btn-outline mt-4">Get a Quote</button>
+              <button
+                className="btn btn-outline mt-4"
+                onClick={() => navigate("/contact")}
+              >
+                Get a Quote
+              </button>
             </li>
           </ul>
         </div>
